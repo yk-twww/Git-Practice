@@ -9,7 +9,9 @@ RSpec.describe "FizzBuzz" do
   end
 
   it "fizz_buzz" do
-    expect(@fizz_buzz.calculate(3)).to eq "Fizz"
-    expect(@fizz_buzz.calculate(5)).to eq "5"
+    expect(@fizz_buzz.calculate(3)).to  eq "Fizz"
+    expect(@fizz_buzz.calculate(5)).to  eq "Buzz"
+    expect(@fizz_buzz.calculate(15)).to eq "FizzBuzz"
+    expect(@fizz_buzz.calculate(4)).to  eq "4"
   end
 end
